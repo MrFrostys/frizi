@@ -1,3 +1,4 @@
+/* Global CSS styles */
 body {
     margin: 0;
     padding: 0;
@@ -11,190 +12,114 @@ body {
     align-items: center;
 }
 
-.content {
-    background-color: rgba(255, 255, 255, 0.8);
+/* Individual section styles */
+.section {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 1000px; /* Adjust as needed */
-    height: 800px;
 }
 
-.header {
-    margin-bottom: 20px;
+.logo-section,
+.navigation-section,
+.content-section,
+.image-section,
+.social-media-section {
+    
+    width: 100%; /* Set all sections to occupy full width */
+    height: 100px; /* Set a fixed height for all sections */
+}
+
+.logo-section {
+    background-color: #252525;
+    height: 80px; /* Reduce height of the logo section */
 }
 
 .logo {
-    max-width: 200px;
-    height: auto;
+    max-width: 150px; /* Reduce the logo size */
+    display: block; /* Center the logo horizontally */
+    margin: 0 auto;
 }
 
-.navigation {
-    margin-bottom: 10px;
+.navigation-section {
+    background-color: #333;
 }
 
+.content-section {
+    background-color: #555;
+}
+
+.image-section {
+    background-color: #777;
+}
+
+.social-media-section {
+    background-color: #999;
+}
+
+/* Horizontal line style */
+.section-line {
+    border: none;
+    border-top: 1px solid #ac9200;
+    margin: 20px 0;
+}
+.navigation-section {
+    
+    height: 30px; /* Adjusted height for the navigation section */
+    background-color: #333;
+}
 button {
     padding: 10px 20px;
     margin: 0 10px;
     border: none;
-    background-color: #007bff;
+    background-color: transparent; /* Transparent background */
     color: white;
-    border-radius: 5px;
+    font-size: inherit;
     cursor: pointer;
+    position: relative;
 }
 
 button:hover {
-    background-color: #0056b3;
+    color: #ac9200; /* Change color on hover */
 }
 
-h1 {
-    color: #333;
-}
-
-p {
-    color: #555;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-/* Existing CSS styles */
-
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media h2 {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle; /* Aligns text vertically with images */
-    line-height: 40px; /* Set the line height to match the height of the icons */
-}
-
-.social-icons {
-    display: inline-block;
-    vertical-align: middle; /* Aligns images vertically with text */
-    margin-top: -15px; /* Adjust the icons slightly higher */
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 50%; /* Make the images circular */
-}
-
-.social-icons img:last-child {
-    margin-right: 0;
-}
-
-.social-icons img:hover {
-    opacity: 0.8;
-}
-/* Existing CSS styles */
-
-/* Existing CSS styles */
-
-hr {
-    border: none;
-    border-top: 1px solid #2b2b2b;
-    margin: 20px 0;
-}
-
-.logo-line {
-    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.navigation {
-    margin-top: 20px;
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-.navigation button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    background-color: transparent; /* Transparent background */
-    color: #333; /* Default color */
-    font-size: inherit;
-    cursor: pointer;
-    position: relative; /* Position relative for glow effect */
-}
-
-.navigation button:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-.navigation button:hover::before {
-    content: ''; /* Create a pseudo-element for the glow effect */
+button:hover::before {
+    content: ''; /* Create a pseudo-element for the line effect */
     position: absolute;
     left: 0;
     right: 0;
     bottom: -2px; /* Slightly below the button */
-    height: 2px; /* Height of the glow */
-    background-color: #007bff; /* Glow color */
+    height: 2px; /* Height of the line */
+    background-color: #ac9200; /* Line color */
 }
-/* Existing CSS styles */
-
-/* Add spacing between sections */
-.contact-sections {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px; /* Increased margin between sections */
-}
-
-/* Set spacing for icons */
-.contact-sections img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px; /* Increased space between icon and text */
+.social-icons img {
+    width: 30px; /* Reduce the width of social media icons */
+    height: 30px; /* Reduce the height of social media icons */
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-/* Set width for each section */
-.contact-sections .contact-info,
-.contact-sections .opening-hours {
-    flex-basis: calc(50% - 40px); /* Adjusted width for each section */
-}
-
-/* Set spacing for headings */
-.contact-sections h2 {
-    margin-top: 0; /* Removed default margin */
-    margin-bottom: 20px; /* Increased space below headings */
-}
-
-/* Set spacing between paragraphs */
-.contact-sections p {
-    margin-bottom: 10px; /* Increased space between paragraphs */
-}
-
-/* Existing CSS styles */
-
-/* Media query for screens smaller than 768px (typical mobile phones) */
+/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-    .header {
-        text-align: center; /* Center align header content */
+    .content {
+        width: 90%; /* Adjust the width to fit smaller screens */
     }
 
-    .logo-line {
-        display: none; /* Hide the logo line on mobile */
+    .logo {
+        max-width: 100px; /* Further reduce the logo size for smaller screens */
     }
 
     .navigation {
-        margin-top: 10px; /* Reduce margin top for navigation on mobile */
+        flex-direction: column; /* Stack navigation buttons vertically */
+        margin-bottom: 20px; /* Add some space between navigation buttons */
     }
 
-    .navigation button {
-        display: block; /* Display buttons as block elements for full width on mobile */
-        width: calc(100% - 20px); /* Calculate width minus margin */
-        margin: 5px 10px; /* Adjust margins */
+    .navigation a {
+        display: block; /* Make navigation links full width */
+        margin-bottom: 10px; /* Add space between navigation links */
+    }
+
+    .section-line {
+        margin: 20px auto; /* Center the section lines */
     }
 
     .social-icons {
