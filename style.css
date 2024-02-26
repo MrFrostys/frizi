@@ -155,30 +155,68 @@ button:hover::before {
 }
 
 /* Media query for screens smaller than 768px */
+/* Media query for screens smaller than 768px */
+/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
     .content {
-        width: 90%; /* Adjust the width to fit smaller screens */
+        width: 90%;
     }
 
     .logo {
-        max-width: 100px; /* Further reduce the logo size for smaller screens */
+        max-width: 150px;
+        margin: 0 auto; /* Center the logo horizontally */
     }
 
     .navigation {
-        flex-direction: column; /* Stack navigation buttons vertically */
-        margin-bottom: 20px; /* Add some space between navigation buttons */
+        flex-direction: column;
+        align-items: center; /* Center navigation items horizontally */
     }
 
     .navigation a {
-        display: block; /* Make navigation links full width */
-        margin-bottom: 10px; /* Add space between navigation links */
+        margin-bottom: 10px;
     }
 
     .section-line {
-        margin: 20px auto; /* Center the section lines */
+        margin: 20px auto;
     }
 
     .social-icons {
-        text-align: center; /* Center align social icons */
+        text-align: center;
+    }
+
+    .logo-section,
+    .navigation-section,
+    .content-section,
+    .image-section,
+    .social-media-section {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto; /* Center the sections horizontally */
+    }
+
+    .contact-section {
+        width: 90%; /* Limit the width of the contact section */
+        flex-direction: column; /* Stack contact sections vertically */
+        align-items: center; /* Center contact section items horizontally */
+    }
+
+    .contact-info,
+    .opening-hours,
+    .call-reservation {
+        flex-basis: 100%; /* Set the basis to full width for contact sections */
+        margin-bottom: 20px; /* Add space between contact sections */
+    }
+
+    .call-reservation {
+        text-align: center; /* Center align call-reservation content */
+    }
+
+    /* Adjust the font size and padding for contact section content */
+    .contact-section h2,
+    .contact-section p {
+        font-size: 14px; /* Reduce font size */
+        padding: 0 10px;
+        text-align: center;
     }
 }
+
