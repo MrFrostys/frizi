@@ -11,20 +11,26 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+h1, p, h2{
+    color: white;
+    
+}
 /* Individual section styles */
+
 .section {
+    width: 1000px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
     padding: 20px;
     text-align: center;
 }
-
 .logo-section,
 .navigation-section,
 .content-section,
 .image-section,
 .social-media-section {
+    width: 1050px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
     
-    width: 100%; /* Set all sections to occupy full width */
     height: 100px; /* Set a fixed height for all sections */
 }
 
@@ -44,7 +50,8 @@ body {
 }
 
 .content-section {
-    background-color: #555;
+    background-color: #cfcfcf;
+    height: 150px;
 }
 
 .image-section {
@@ -52,15 +59,19 @@ body {
 }
 
 .social-media-section {
-    background-color: #999;
+    background-color: #292929;
+    height: 50px; /* Reduce height of the logo section */
 }
 
-/* Horizontal line style */
-.section-line {
-    border: none;
-    border-top: 1px solid #ac9200;
-    margin: 20px 0;
+
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
 }
+
 .navigation-section {
     
     height: 30px; /* Adjusted height for the navigation section */
@@ -96,6 +107,51 @@ button:hover::before {
     margin-right: 10px;
     cursor: pointer;
     border-radius: 50%;
+}
+.section-line {
+    border: none;
+    border-top: 1px solid #ac9200;
+    margin: 20px 0;
+}
+.social-media-section h2,
+.social-icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px; /* Adjust the margin */
+    cursor: pointer;
+}
+/* Additional styles for the contact sections */
+.contact-section {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #555; /* Adjust the background color */
+}
+
+.contact-info,
+.opening-hours,
+.call-reservation {
+    flex-basis: calc(33.33% - 10px);
+}
+
+.contact-info,
+.opening-hours {
+    margin-right: 10px;
+}
+
+.contact-info h2,
+.opening-hours h2,
+.call-reservation h2 {
+    margin-top: 0;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
 }
 
 /* Media query for screens smaller than 768px */
