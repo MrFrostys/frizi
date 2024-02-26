@@ -173,7 +173,7 @@ button:hover::before {
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
     body {
-        font-size: 9px; /* Reduce font size for smaller screens */
+        font-size: 10px; /* Reduce font size for smaller screens */
     }
     .content {
         width: 90%;
