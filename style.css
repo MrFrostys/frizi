@@ -17,7 +17,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 600px; /* Adjust as needed */
+    width: 1000px; /* Adjust as needed */
+    height: 800px;
 }
 
 .header {
@@ -101,7 +102,7 @@ img {
 
 hr {
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #2b2b2b;
     margin: 20px 0;
 }
 
@@ -141,6 +142,39 @@ hr {
     height: 2px; /* Height of the glow */
     background-color: #007bff; /* Glow color */
 }
+/* Existing CSS styles */
+
+/* Add spacing between sections */
+.contact-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; /* Increased margin between sections */
+}
+
+/* Set spacing for icons */
+.contact-sections img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px; /* Increased space between icon and text */
+}
+
+/* Set width for each section */
+.contact-sections .contact-info,
+.contact-sections .opening-hours {
+    flex-basis: calc(50% - 40px); /* Adjusted width for each section */
+}
+
+/* Set spacing for headings */
+.contact-sections h2 {
+    margin-top: 0; /* Removed default margin */
+    margin-bottom: 20px; /* Increased space below headings */
+}
+
+/* Set spacing between paragraphs */
+.contact-sections p {
+    margin-bottom: 10px; /* Increased space between paragraphs */
+}
+
 /* Existing CSS styles */
 
 /* Media query for screens smaller than 768px (typical mobile phones) */
