@@ -55,9 +55,13 @@ h1, p, h2{
 }
 
 .image-section {
+   height: 200px;
     background-color: #777;
 }
-
+.image-section img{
+    height: 200px;
+    width: 200px;
+}
 .social-media-section {
     background-color: #292929;
     height: 50px; /* Reduce height of the logo section */
